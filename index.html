@@ -1,27 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-  <link rel="stylesheet" href="./css/index.css">
-  <title>Design Your Life</title>
-</head>
-<body>
-  <header>
-    <nav>
-      <a href="./index.html">home</a>
-      <a href="./about.html">about</a>
-      <a href="./product.html">product</a>
-      <a href="./login.html">login</a>
-    </nav>
-  </header>
-  <main>
-
-  </main>
-  <footer>
-
-  </footer>
-</body>
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Design Your Life : Home</title>
+  </head>
+  <body>
+    <header>
+      <!-- add hamburger menu, will transform to an X to close and be responsive-->
+      <div class="row">
+        <div>
+          <h1>Design Your Life</h1>
+        </div>
+        <div class="menu-btn">
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+        </div>
+      </div>
+      <nav class="menu">
+        <ul class="menu-nav">
+          <li class="nav-item current">
+            <a href="./index.html">home</a>
+          </li>
+          <li class="nav-item">
+            <a href="./about.html">about</a>
+          </li>
+          <li class="nav-item">
+            <a href="./product.html">product</a>
+          </li>
+          <li class="nav-item">
+            <a class="open-login-modal">log in</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="login-box">
+      <div class="login-header">
+        <h2>Login or Register</h2>
+        <div>
+          <div class="modal-menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+          </div>
+        </div>
+      </div>
+      <form action="">
+        <div class="input-box">
+          <input type="text" name="" required="" />
+          <label for="">User Name:</label>
+        </div>
+        <div class="input-box">
+          <input type="password" name="" required="" />
+          <label for="">Password:</label>
+        </div>
+        <input type="submit" name="" value="Log In / Register" />
+      </form>
+    </div>
+    <main>
+      <article class="full-width">
+        <section>
+          <h1>
+            Design Your Life: Take Control and Be the Author of Your Destiny!
+          </h1>
+          <h2>Design your personal success through our lifestyle journal</h2>
+          
+        </section>
+      </article>
+      <article class="single-card">
+        <!-- main call to action -->
+        <section class="card-box">
+            
+          <div class="card-header">
+            <h2>What is Design Your Life?</h2>
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              Design your life is a Journal you create that fundamentally
+              changes the way you view and experience your future, based on
+              Enjoyment, Energy, and Focus levels
+            </p>
+          </div>
+          <div class="card-footer">
+              <!-- put link to application here -->
+              <a href="">Click Here to Join for Free!</a>
+          </div>
+        </section>
+      </article>
+      <article class="multi-card">
+        <!-- Discover -->
+        <section class="card-box discover">
+            <div class="card-header">
+              <h2>Discover your Passion</h2>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                The first step is to discover what your passion is, by using this application you will easily be able to sort what you enjoy most, and therfore concentrate better on the job at hand. 
+              </p>
+            </div>
+          </section>
+          <!-- Form -->
+          <section class="card-box form">
+          <div class="card-header">
+              <h2>Form your Plan</h2>
+          </div>
+          <div class="card-body">
+            
+            <p class="card-text">
+              We can help form your plan, and show you which direction to go in your life, based on actual data
+            </p>
+          </div>
+          
+        </section>
+        <!-- Design -->
+        <section class="card-box design">
+            <div class="card-header">
+                <h2>Design Your Life</h2>
+            </div>
+              <div class="card-body">
+                <p class="card-text">
+                  Once you have formed your plan, the next step is to put your plan in action, we can help by continuing to improve and target your areas of success. 
+                </p>
+            </div>
+            <div class="card-footer">
+                <!-- put link to application here -->
+                <a href="">Click Here to Join for Free!</a>
+              </div>
+          </section>
+      </article>
+    </main>
+    <footer> </footer>
+    <script src="js/main.js"></script>
+  </body>
 </html>

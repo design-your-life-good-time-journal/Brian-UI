@@ -1,0 +1,64 @@
+body {
+  background: @main-color;
+}
+
+header {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  max-width: inherit;
+  height: 3rem;
+  background: white;
+  border-bottom: 3px dotted @border-color;
+  .menu-btn {
+    z-index: 1100;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    .btn-line {
+      width: 1.8rem;
+      height: 2px;
+      margin: none;
+      margin-bottom: 0.5rem;
+      background: @font-color;
+    }
+  }
+  .menu-btn.close {
+    .btn-line {
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(0.1rem, 0rem);
+      }
+      &:nth-child(2) {
+        display: none;
+      }
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(0.4rem, -6px);
+      }
+    }
+  }
+  .menu {
+    visibility: hidden;
+    .menu-nav {
+      background: white;
+      border-bottom: 1px solid @border-color;
+      transform: translate3d(0, 0, 0);
+      .nav-item {
+        font-size: 1.5rem;
+      }
+      .nav-item.current {
+        display: none;
+      }
+    }
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    li {
+      padding: 1.25rem 3rem;
+    }
+  }
+  .show {
+    visibility: visible;
+  }
+}

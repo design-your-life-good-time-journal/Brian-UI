@@ -1,0 +1,112 @@
+.login-box {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1200;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30rem;
+  max-width: 100vw;
+  height: 30rem;
+  max-height: 100vh;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
+  box-shadow: 0 1.5rem 25rem rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  h2 {
+    color: @main-color;
+    margin: 0 0 3rem;
+    padding: 0;
+    text-align: left;
+    font-size: 1.5rem;
+  }
+  .input-box {
+    position: relative;
+
+    input {
+      width: 100%;
+      padding-bottom: 1rem;
+      font-size: 1.6rem;
+      color: @main-color;
+      margin-bottom: 3rem;
+      border: none;
+      border-bottom: 3px dotted @main-color;
+      outline: none;
+      background: transparent;
+      &:focus ~ label,
+      &:valid ~ label {
+        top: -3rem;
+        left: 0px;
+        color: @main-color;
+        font-size: 1.5rem;
+      }
+    }
+    label {
+      position: absolute;
+      font-size: 1.6rem;
+      padding: 1.6rem;
+      top: 0;
+      left: 0;
+      padding: 1rem 0;
+      color: @main-color;
+      transition: 0.5s;
+    }
+  }
+  .modal-menu-btn {
+    position: absolute;
+    z-index: 1100;
+    right: 2rem;
+    top: 2rem;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    .btn-line {
+      width: 1.8rem;
+      height: 2px;
+      margin: none;
+      margin-bottom: 0.5rem;
+      background: @main-color;
+      transform: translate(0rem, -0.5rem);
+
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(0.1rem, 0rem);
+      }
+      &:nth-child(2) {
+        transform: rotate(-45deg) translate(0.4rem, -6px);
+      }
+    }
+  }
+  .menu {
+    visibility: hidden;
+    .menu-nav {
+      background: white;
+      border-bottom: 1px solid @border-color;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    li {
+      padding: 1.25rem 3rem;
+    }
+  }
+  .show {
+    visibility: visible;
+  }
+}
+.login-box.show {
+  visibility: visible;
+}
+.login-box input[type='submit'] {
+  color: @main-color;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  padding: 0.25rem 2rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  background: @button-color;
+}
