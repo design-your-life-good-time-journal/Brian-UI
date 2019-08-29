@@ -1,0 +1,30 @@
+@media @tablet {
+  .menu-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
+  }
+
+  main{
+    article{
+      .custom-flex(row, space-around, flex-start)
+    }
+    .full-width{
+      height:50vh;
+    }
+    .single-card{
+      .card-box{
+        height: 45vh;
+      }
+    }
+    .multi-card{
+      justify-content: space-between;
+      
+      .card-box{
+        width: 33%;
+        height: 50vh;
+      }
+    }
+  }
+}

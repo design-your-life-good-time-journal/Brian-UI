@@ -1,7 +1,29 @@
-a{
+body {
+  margin: 0 auto;
+  max-width: @max-width;
+}
+
+a {
   text-decoration: none;
   color: @font-color;
-  &:hover{
+  &:hover {
     transform: scale(1.1);
   }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  margin: 0.75rem;
+  h1 {
+    font-size: 1.75rem;
+  }
+}
+
+main {
+  position: relative;
+  top: 3.5rem;
 }
