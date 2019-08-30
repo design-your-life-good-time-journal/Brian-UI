@@ -1,0 +1,328 @@
+@import "reset.less";
+@import "global.less";
+
+@import "variables.less";
+@import "mixins.less";
+
+@import "header.less";
+@import "body.less";
+@import "footer.less";
+@import "index-variables.less";
+@import "navbar.less";
+
+.about-section {
+  width:90%;
+  margin-left:5%;
+
+  @media @desktop {
+    padding:2%;
+     margin: 0 auto;
+    }
+  }
+
+.top-img {
+   width: 85%;
+   margin-left: 5%;
+
+     @media @tablet {
+      width: 75%;
+      margin-left: 10%;
+    }
+
+    @media @desktop {
+      width: 60%;
+      margin-left: 20%;
+    }
+  }
+  
+.border-img {
+  width: 70%;
+  margin-left: 15%;
+
+  @media @tablet {
+    margin-left: 15%;
+    margin-top: 5%;
+    }
+  }
+
+  
+.top-content-section {
+    margin-left: 5%;
+    width: 90%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    }
+  
+.top-text-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+      
+    @media @tablet {
+      width: 40%;
+      padding: 1%;
+      margin-left: 7%;
+      }
+
+    @media @desktop {
+      width: 45%;
+      margin-left: 10%;
+      }
+}
+
+.enjoyment {
+    width: 70%;
+    margin-left: 10%;
+    padding: 3%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px grey;
+
+    @media @tablet {
+      width: 30%;
+      margin: 0 auto;
+      padding: .5%;
+    }
+
+    @media @desktop {
+       width: 20%;
+      margin-left: 2%;
+       }
+      }
+
+ .energized-section {
+    width: 90%;
+    margin-left: 3%;
+
+    @media @tablet {
+    padding: 0%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    }
+
+    @media @desktop {
+      width: 70%;
+      margin-left:15%;
+    }
+  }
+
+.energized {
+    display: none;
+
+    @media @tablet {
+     display: block;
+     max-width: 30%;
+     max-height: 50%;
+     margin-top: 2%;
+     padding: .5%;
+     border-radius: 10px;
+     box-shadow: 5px 5px 5px grey;
+    }
+
+    @media @desktop {
+      width: 40%;
+    }
+  }
+    
+.energized-text {
+  padding: 3%;
+
+    @media @tablet {
+      max-width: 60%;
+      margin-top: 7%;
+    }
+
+    @media @desktop {
+      width: 55%;
+      padding: 1%;
+    }
+  }
+  
+.engaged-section {
+  max-width: 90%;
+  margin-left: 5%;
+
+ @media @desktop {
+   margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: flex-start;
+    width: 100%;
+    }
+  }
+
+
+
+.engage-img {
+    padding-top: 3%;
+    width: 70%;
+    margin-left: 15%;
+
+    @media @tablet {
+      width: 50%;
+      margin-left: 25%;
+    }
+
+    img {
+      border-radius: 10px;
+      }
+}
+
+.engage-img {
+    width: 70%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px grey;
+
+    @media @tablet {
+      max-width: 50%;
+      }
+}
+
+.aside {
+    display: none;
+
+    @media @tablet {
+    display: block;
+    max-width: 60%;
+    border-left: 1px solid lightgrey;
+    padding: 5%;
+    margin-top: 5%;
+    margin-left: 15%;
+    font-style: italic;
+  } 
+}
+
+.team {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  
+    padding: 5%;
+    align-items: center;
+    border: .5px solid #38524f;
+    min-height: 100%;
+    margin: 3%;
+    margin-left: 5%;
+
+    @media @tablet {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+}
+
+.Meet-Our-Team {
+  width: 100%;
+  margin-left: 7%;
+  margin-right: 5%;
+}
+
+.kayla, .adrian, .brian, .katrina, .james {
+  position: relative;
+  width: 100%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  padding: 1.2%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px grey;
+
+  @media @tablet {
+    max-width:45%;
+    padding: 1%;
+  }
+}
+
+.kayla-img, .adrian-img, .brian-img, .katrina-img, .james-img {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 3%;
+  left: -2%;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: @green;
+  border-radius: 10px;
+}
+
+.kayla:hover .overlay, .adrian:hover .overlay, 
+.brian:hover .overlay, .katrina:hover .overlay,
+.james:hover .overlay  {
+  opacity: 1;
+  transform: rotateY(180deg);
+  padding: 2%;
+}
+
+.icon2 {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  transform: rotateY(180deg);
+  text-align: center;
+  top: 50%;
+  right: 40%;
+}
+
+.icon3 {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 70%;
+  right: 40%;
+  transform: rotateY(180deg);
+  text-align: center;
+}
+
+.text-overlay {
+  margin-top: 10%;
+  transform: rotateY(180deg);
+  text-align: center;
+  color: white;
+}
+
+fa-user:hover {
+  color: #eee;
+}
+
+.adrian, .brian, .katrina {
+  margin-top: 6%;
+}
+
+
+.arian .overlay .icon3,
+.katrina .overlay .icon3 {
+  display: none;
+}
+
+.james {
+  @media @tablet {
+    margin-left: 25%;
+  }
+}
+
+.footer {
+  width: 100%;
+  border-top: .5px solid black;
+  background: silver;
+  padding-bottom: 3%;
+  margin-top: 3%;
+}
