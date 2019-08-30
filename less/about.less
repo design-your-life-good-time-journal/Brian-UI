@@ -9,6 +9,8 @@
 @import "footer.less";
 @import "index-variables.less";
 @import "navbar.less";
+@import "modal.less";
+@import "index-mixins.less";
 
 .about-section {
   width:90%;
@@ -325,4 +327,13 @@ fa-user:hover {
   background: silver;
   padding-bottom: 3%;
   margin-top: 3%;
+}
+
+@media @tablet{
+  .menu-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
+  }
 }
