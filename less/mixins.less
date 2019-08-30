@@ -1,0 +1,47 @@
+.displayFLex(@justify, @align){
+    display:flex;
+    justify-content:@justify;
+    align-items:@align;
+}
+
+// paramixins
+
+.style (@width; @radius; @color; @padding; @mt;){
+    width:@width;
+    border-radius:@radius;
+    background-color:@color;
+    padding:@padding;
+    margin-top:@mt; 
+    }
+
+
+.btn-text (@size; @weight; @f-color; @dec; @align;){
+        font-size:@size; 
+        font-weight:@weight;
+        color:@f-color; 
+        text-decoration:@dec; 
+        text-align:@align; 
+}
+
+.btn2-text (@size; @weight; @f-color; @dec; @align;){
+    font-size:@size; 
+    font-weight:@weight;
+    color:@f-color; 
+    text-decoration:@dec; 
+    text-align:@align; 
+}
+  
+
+  //css for paramixins//
+
+   .btn {
+    .style(70%; 5%; @green; 2%; 3%);
+    .btn-text(14px; 500;white; none; center);
+        margin-left:12%;
+  }
+
+  .btn2 {
+    .style(70%; 7%; @green; 3%; 1%);
+    .btn-text(14px; 500;white; none; center);
+    margin-left:10%;
+     }
